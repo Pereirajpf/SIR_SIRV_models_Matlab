@@ -25,7 +25,7 @@ for(i=1:n)
 end
 
 %Maximo de infetados
-fprintf('Maximo de infetados = %d, dia = %d\n',round(max(yi)),round(find(yi==max(yi))*0.01));
+fprintf('Maximo de infetados = %d, dia = %d\n',round(max(yi)),round(find(yi==max(yi))*h));
 
 %Plot
 plot(x,ys,'Color',[1 0.7 0],'DisplayName','S'); hold on;

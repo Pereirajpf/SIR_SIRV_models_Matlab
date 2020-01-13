@@ -50,7 +50,7 @@ yv(i+1)=yv(i)+((h/6)*(v_k1+(2*v_k2)+(2*v_k3)+v_k4));
 end
 
 %Maximo de infetados
-fprintf('Maximo de infetados = %d, dia = %d\n',round(max(yi)),round(find(yi==max(yi))*0.01));
+fprintf('Maximo de infetados = %d, dia = %d\n',round(max(yi)),round(find(yi==max(yi))*h));
 
 %Plot
 plot(x,ys,'Color',[1 0.7 0],'DisplayName','S'); hold on;
