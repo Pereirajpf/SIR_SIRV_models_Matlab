@@ -42,7 +42,7 @@ yr(i+1)=yr(i)+((h/6)*(r_k1+(2*r_k2)+(2*r_k3)+r_k4));
 end
 
 %Maximo de infetados
-fprintf('Maximo de infetados = %d, dia = %d\n',round(max(yi)),round(find(yi==max(yi))*0.01));
+fprintf('Maximo de infetados = %d, dia = %d\n',round(max(yi)),round(find(yi==max(yi))*h));
 
 %Plot
 plot(x,ys,'Color',[1 0.7 0],'DisplayName','S'); hold on;
