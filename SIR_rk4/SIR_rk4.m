@@ -1,9 +1,9 @@
 %Trabalho modelacao
 %Usando o metodo de Runge-Kuta de ordem 4 para o modelo SIR
-function SIR_rk4(beta,gama,iniS,iniI,iniR,b)
+function SIR_rk4(beta,gama,iniS,iniI,iniR,b,h)
 
 a=0;            %Inicio no dia 0
-h=0.01;         %step size   
+%h=step size   
 n=(b-a)/h;      %numero de partições
 x=a:h:b;        %Ponto de descritizacao
 beta=beta/(iniS+iniI+iniR);  
